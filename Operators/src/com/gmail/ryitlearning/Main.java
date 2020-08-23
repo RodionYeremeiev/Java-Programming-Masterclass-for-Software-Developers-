@@ -87,5 +87,18 @@ public class Main {
         int ageOfClient = 20;
         boolean isEighteenOrOver = ageOfClient == 20;
         System.out.println("isEighteenOrOver is set to be : " + isEighteenOrOver);
+
+//        Challenge
+        double firstValue = 20.00;
+        double secndValue = 80.00;
+
+        double remainder = ((firstValue + secndValue) * 100.00) % 40.00;
+
+        boolean isNoRemainder = remainder == 0;
+        System.out.println("isNoRemainder = " + isNoRemainder);
+
+        if (!isNoRemainder) {
+            System.out.println("Got some remainder");
+        }
     }
 }
