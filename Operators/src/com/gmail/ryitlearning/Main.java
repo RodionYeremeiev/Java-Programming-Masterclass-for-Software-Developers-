@@ -78,5 +78,14 @@ public class Main {
         if (!isCar) {
             System.out.println("this is not supposed to happen");
         }
+        isCar = true;
+        boolean wasCar = isCar;
+        if (wasCar) {
+            System.out.println("Was car is true");
+        }
+
+        int ageOfClient = 20;
+        boolean isEighteenOrOver = ageOfClient == 20;
+        System.out.println("isEighteenOrOver is set to be : " + isEighteenOrOver);
     }
 }
