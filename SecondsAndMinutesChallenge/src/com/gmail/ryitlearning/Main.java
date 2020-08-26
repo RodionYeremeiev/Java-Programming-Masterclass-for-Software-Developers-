@@ -38,38 +38,45 @@ public class Main {
     public static void main(String[] args) {
 
 //        System.out.println(getDurationString(367,50));
-        getDurationString(61,0);
-        getDurationString(98512);
+        getDurationString(65, 45);
+        getDurationString(3945);
 
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        if (minutes < 0 || seconds < 0 || seconds > 59) {
+        if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
             return "Invalid Value";
         }
+
         int hours = minutes / 60;
         int remainingMinutes = minutes % 60;
-        String result = hours + "h " + remainingMinutes + "m " + seconds + "s";
-        if (hours < 10 && remainingMinutes < 10 && seconds < 10) {
-            result = "0" + hours + "h " + "0" + remainingMinutes + "m " + "0" + seconds + "s";
-        } else if (hours < 10 && remainingMinutes < 10) {
-            result = "0" + hours + "h " + "0" + remainingMinutes + "m " + seconds + "s";
-        } else if (remainingMinutes < 10 && seconds < 10) {
-            result = hours + "h " + "0" + remainingMinutes + "m " + "0" + seconds + "s";
-        } else if (seconds < 10) {
-            result = hours + "h " + remainingMinutes + "m " + "0" + seconds + "s";
-        } else if (hours < 10) {
-            result = "0" + hours + "h " + remainingMinutes + "m " + seconds + "s";
+
+        String hoursString = hours + "h";
+        if (hours < 10) {
+            hoursString = "0" + hoursString;
         }
+        String minutesString = remainingMinutes + "m";
+        if (remainingMinutes < 10) {
+            minutesString = "0" + minutesString;
+        }
+        String secondsString = seconds + "s";
+        if (seconds < 10) {
+            secondsString = "0" + secondsString;
+        }
+
+        String result = hoursString + " " + minutesString + " " + secondsString;
         System.out.println(result);
         return result;
     }
-    public static String getDurationString (int seconds){
-        if (seconds < 0){
+
+    public static String getDurationString(int seconds) {
+        if (seconds < 0) {
             return "Invalid Value";
         }
+
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
+
         return getDurationString(minutes, remainingSeconds);
     }
 }
