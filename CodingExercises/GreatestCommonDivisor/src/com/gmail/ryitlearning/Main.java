@@ -64,20 +64,20 @@ public class Main {
 
     }
 
-    public static int getGreatestCommonDivisor(int first, int second){
-        if (first < 10 || second < 10){
+    public static int getGreatestCommonDivisor(int first, int second) {
+        if (first < 10 || second < 10) {
             return -1;
         }
         int minimum;
         int count = 1;
         int divider = 1;
-        if (first<=second){
+        if (first <= second) {
             minimum = first;
-        }else {
+        } else {
             minimum = second;
         }
-        while (count<=minimum){
-            if (first%count == 0 && second%count ==0){
+        while (count <= minimum) {
+            if (first % count == 0 && second % count == 0) {
                 divider = count;
             }
             count++;
