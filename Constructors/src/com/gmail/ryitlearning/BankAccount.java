@@ -23,6 +23,12 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String customerName, String eMail, String phoneNumber) {
+        this.customerName = customerName;
+        this.eMail = eMail;
+        this.phoneNumber = phoneNumber;
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
