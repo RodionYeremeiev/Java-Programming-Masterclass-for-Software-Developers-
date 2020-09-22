@@ -40,12 +40,11 @@ public class Main {
 
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Element #" + i + " = " + array[i]);
+            System.out.println("Element #" + (i+1) + " = " + array[i]);
         }
     }
 
     public static void main(String[] args) {
-	// write your code here
        int[] test =  getIntegers(5);
         printArray(test);
         System.out.println("---------------------");

@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\IDE\Projects\Udemy\Java Programming Masterclass for Software Developers\java-programming-masterclass-for-software-developers\ReferencesVsValueTypes\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
