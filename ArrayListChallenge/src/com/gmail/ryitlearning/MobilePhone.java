@@ -16,6 +16,7 @@ public class MobilePhone {
             System.out.println("Contact already exist");
         }
         myContacts.add(contact);
+        System.out.println("Contact " + contact.getName() + " added.");
         return true;
     }
 
@@ -26,6 +27,8 @@ public class MobilePhone {
             return false;
         }
         myContacts.set(foundPosition, newContact);
+        System.out.println("Contact " + oldContact.getName() + " replaced with " + newContact.getName());
+
         return true;
     }
 
@@ -43,13 +46,39 @@ public class MobilePhone {
         return -1;
     }
 
+    public String queryContact(Contact contact){
+        if (findContact(contact)>=0){
+            return contact.getName();
+        }
+        return null;
+    }
+
+    public Contact queryContact(String name){
+        int position = findContact(name);
+        if (position >=0){
+            return this.myContacts.get(position);
+        }
+        return null;
+    }
+
     public void removeContact(Contact contactToRemove) {
         if (myContacts.contains(contactToRemove)) {
             myContacts.remove(myContacts.indexOf(contactToRemove));
-        }
-        System.out.println("Contact: " + contactToRemove.getName() + " not found");
-    }
-    public void removeContact(String name) {
+            System.out.println("Contact: " + contactToRemove.getName() + " deleted");
 
+        }else {
+            System.out.println("Contact: " + contactToRemove.getName() + " not found");
+        }
+    }
+    public void printContactList(){
+        if (myContacts.size() == 0){
+            System.out.println("Your contact list is empty.");
+        } else {
+            System.out.println("You got " + this.myContacts.size() + " in your list:");
+            for (int i = 0; i < this.myContacts.size(); i++) {
+                System.out.println((i + 1) + ". " + this.myContacts.get(i).getName() +
+                        "\nphone number: " + this.myContacts.get(i).getPhoneNumber());
+            }
+        }
     }
 }
