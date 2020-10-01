@@ -88,7 +88,8 @@ public class Main {
         System.out.println("\t 3 - To modify an item in the list.");
         System.out.println("\t 4 - To remove an item to the list.");
         System.out.println("\t 5 - To search an item in the list.");
-        System.out.println("\t 6 - To quit the application.");
+        System.out.println("\t 6 - To process array list.");
+        System.out.println("\t 7 - To quit the application.");
     }
 
     public static void addItem(){
@@ -126,7 +127,7 @@ public class Main {
         ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
 
         String[]myArray = new String[groceryList.getGroceryList().size()];
-        myArray = groceryList.getGroceryList().toArray(myArray);
+        myArray = groceryList.getGroceryList().toArray(myArray); 
     }
 
 }
