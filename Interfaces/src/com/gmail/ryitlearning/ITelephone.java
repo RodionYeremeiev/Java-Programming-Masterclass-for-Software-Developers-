@@ -5,5 +5,5 @@ public interface ITelephone {
     void dial(int phoneNumber);
     void answer();
     boolean callPhone(int phoneNumber);
-    boolean isRingning();
+    boolean isRinging();
 }

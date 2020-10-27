@@ -1,38 +1,45 @@
 package com.gmail.ryitlearning;
 
-public class DeskPhone implements ITelephone {
+public class MobilePhone implements ITelephone {
     private int myNumber;
     private boolean isRinging;
+    private boolean isOn = false;
 
-    public DeskPhone(int myNumber) {
+    public MobilePhone(int myNumber) {
         this.myNumber = myNumber;
     }
 
     @Override
     public void powerOn() {
-        System.out.println("No action taken, desk phone does not have a power button");
+        isOn = true;
+        System.out.println("Mobile phone powered Up");
     }
 
     @Override
     public void dial(int phoneNumber) {
-        System.out.println("Now ringing " + phoneNumber + " on desk phone");
+        if (isOn) {
+            System.out.println("Now ringing " + phoneNumber + " on desk phone");
+        } else {
+            System.out.println("Phone is switched off");
+        }
     }
 
     @Override
     public void answer() {
         if (isRinging) {
-            System.out.println("Answer the desk phone");
+            System.out.println("Answering the mobile phone");
             isRinging = false;
         }
     }
 
     @Override
     public boolean callPhone(int phoneNumber) {
-        if (phoneNumber == myNumber) {
+        if (phoneNumber == myNumber && isOn) {
             isRinging = true;
-            System.out.println("Ring ring");
+            System.out.println("Melody ring");
         } else {
             isRinging = false;
+            System.out.println("Mobile phone not on or wrong number");
         }
         return isRinging;
     }
@@ -42,3 +49,4 @@ public class DeskPhone implements ITelephone {
         return isRinging;
     }
 }
+
