@@ -73,7 +73,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Player tim = new Player("Tim",10,15);
+        Player tim = new Player("Tim", 10, 15);
         System.out.println(tim.toString());
         saveObject(tim);
 
@@ -81,7 +81,12 @@ public class Main {
         System.out.println(tim);
         tim.setWeapon("StormBringer");
         saveObject(tim);
-        loadObject(tim);
+//        loadObject(tim);
         System.out.println(tim);
+
+        ISavable werewolf = new Monster("Werewolf", 20, 40);
+        System.out.println("Strength = " + ((Monster) werewolf).getStrength());
+        System.out.println(werewolf);
+        saveObject(werewolf);
     }
 }
