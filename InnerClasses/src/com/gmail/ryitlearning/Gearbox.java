@@ -15,7 +15,7 @@ public class Gearbox {
         this.gears.add(neutral);
 
         for (int i = 0; i < maxGears; i++) {
-            addGear(i, i*5.3);
+            addGear(i, i * 5.3);
         }
     }
 
@@ -59,6 +59,7 @@ public class Gearbox {
         public double getRatio() {
             return ratio;
         }
+
         public double driveSpeed(int revs) {
             return revs * this.ratio;
         }
