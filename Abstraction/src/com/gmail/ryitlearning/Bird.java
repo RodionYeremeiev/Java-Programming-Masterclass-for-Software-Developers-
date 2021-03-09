@@ -1,6 +1,6 @@
 package com.gmail.ryitlearning;
 
-public abstract class Bird extends Animal {
+public abstract class Bird extends Animal implements CanFly {
 
     public Bird(String name) {
         super(name);
@@ -16,5 +16,7 @@ public abstract class Bird extends Animal {
         System.out.println(getName() + " Breathing in, breathing out, repeat");
     }
 
-    public abstract void fly();
+    public void fly(){
+        System.out.println(getName() + " is flapping it's wings");
+    }
 }
