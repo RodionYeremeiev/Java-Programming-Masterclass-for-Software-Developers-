@@ -34,9 +34,10 @@ public class MyLinkedList implements NodeList {
                     return true;
                 }
             } else if (comparison > 0) {
-                // new item is less than 0, insert before
+                // new item is less, insert before
                 if (currentItem.previous() != null) {
-                    currentItem.setPrevious(currentItem.previous());
+                    currentItem.previous().setNext(newItem);
+                    newItem.setPrevious(currentItem.previous());
                     newItem.setNext(currentItem);
                     currentItem.setPrevious(newItem);
                 } else {
@@ -62,6 +63,13 @@ public class MyLinkedList implements NodeList {
 
     @Override
     public void traverse(ListItem root) {
-
+        if (root == null){
+            System.out.println("The list is empty");
+        } else {
+            while (root != null) {
+                System.out.println(root.getValue());
+                root = root.next();
+            }
+        }
     }
 }
