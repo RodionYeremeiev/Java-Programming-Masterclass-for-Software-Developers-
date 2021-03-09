@@ -90,7 +90,7 @@ public class MyLinkedList implements NodeList {
 
     @Override
     public void traverse(ListItem root) {
-        if (root == null){
+        if (root == null) {
             System.out.println("The list is empty");
         } else {
             while (root != null) {
@@ -98,5 +98,11 @@ public class MyLinkedList implements NodeList {
                 root = root.next();
             }
         }
+
+        // recursive implementation
+//        if (root != null){
+//            System.out.println(root.getValue());
+//            traverse(root.next());
+//        }
     }
 }
