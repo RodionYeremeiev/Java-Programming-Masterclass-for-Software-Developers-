@@ -1,8 +1,8 @@
 package com.gmail.ryitlearning.model;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DataSource {
     public static final String DB_Name = "music.db";
@@ -47,6 +47,43 @@ public class DataSource {
         }
     }
 
+    public List<Artist> queryArtist() {
+        Statement statement = null;
+        ResultSet results = null;
 
+        try {
+            statement = connection.createStatement();
+            results = statement.executeQuery("SELECT * FROM " + TABLE_ARTISTS);
+
+            List<Artist> artists = new ArrayList<>();
+            while (results.next()) {
+                Artist artist = new Artist();
+                artist.setId(results.getInt(COLUMN_ARTIST_ID));
+                artist.setName(results.getString(COLUMN_ARTIST_NAME));
+                artists.add(artist);
+            }
+
+            return artists;
+
+        } catch (SQLException e) {
+            System.out.println("Query failed " + e.getMessage());
+            return null;
+        } finally {
+            try {
+                if (results != null) {
+                    results.close();
+                }
+            } catch (SQLException e) {
+                System.out.println("Error closing resultSet: " + e.getMessage());
+            }
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+            } catch (SQLException e) {
+                System.out.println("Error closing Statement: " + e.getMessage());
+            }
+        }
+    }
 }
 
