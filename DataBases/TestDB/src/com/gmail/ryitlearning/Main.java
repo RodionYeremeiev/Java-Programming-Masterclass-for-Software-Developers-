@@ -27,30 +27,36 @@ public class Main {
                     COLUMN_EMAIL + " text" +
                     ")");
 
-            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
-                    " (" + COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL + " ) " +
-                    "VALUES('Rod', 123456, 'Rod@email.com')");
+            insertContact(statement,"Rod", 123456, "Rod@email.com" );
+            insertContact(statement,"Joe",123789, "Joe@email.com" );
+            insertContact(statement,"Bob",654321, "Bob@email.com" );
+            insertContact(statement,"Jim",123789, "Jim@email.com" );
 
-            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
-                    " (" + COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL +
-                    " ) " +
-                    "VALUES('Joe', 123789, 'Joe@email.com')");
+//            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
+//                    " (" + COLUMN_NAME + ", " +
+//                    COLUMN_PHONE + ", " +
+//                    COLUMN_EMAIL + " ) " +
+//                    "VALUES('Rod', 123456, 'Rod@email.com')");
 
-            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
-                    " (" + COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL + " ) " +
-                    "VALUES('Bob', 654321, 'Bob@email.com')");
+//            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
+//                    " (" + COLUMN_NAME + ", " +
+//                    COLUMN_PHONE + ", " +
+//                    COLUMN_EMAIL +
+//                    " ) " +
+//                    "VALUES('Joe', 123789, 'Joe@email.com')");
 
-            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
-                    " (" + COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL + " ) " +
-                    "VALUES('Jim', 123789, 'Jim@email.com')");
+//            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
+//                    " (" + COLUMN_NAME + ", " +
+//                    COLUMN_PHONE + ", " +
+//                    COLUMN_EMAIL + " ) " +
+//                    "VALUES('Bob', 654321, 'Bob@email.com')");
+
+//            statement.execute("INSERT  INTO " + TABLE_CONTACTS +
+//                    " (" + COLUMN_NAME + ", " +
+//                    COLUMN_PHONE + ", " +
+//                    COLUMN_EMAIL + " ) " +
+//                    "VALUES('Jim', 123789, 'Jim@email.com')");
+
 
             statement.execute("UPDATE " + TABLE_CONTACTS + " SET " +
                     COLUMN_PHONE + "= '753159'" +
@@ -96,5 +102,11 @@ public class Main {
         }
     }
 
-
+    private static void insertContact(Statement statement, String name, int phone, String email)throws SQLException{
+        statement.execute("INSERT  INTO " + TABLE_CONTACTS +
+                " (" + COLUMN_NAME + ", " +
+                COLUMN_PHONE + ", " +
+                COLUMN_EMAIL + " ) " +
+                "VALUES('" + name + "', " + phone +", '" + email + "')");
+    }
 }
