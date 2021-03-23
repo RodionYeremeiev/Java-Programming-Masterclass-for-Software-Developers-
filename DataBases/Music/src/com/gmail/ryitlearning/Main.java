@@ -14,10 +14,12 @@ public class Main {
             return;
         }
 
-        List<Artist> artists = dataSource.queryArtist();
+//        List<Artist> artists = dataSource.queryArtist(DataSource.ORDER_BY_NONE);
+//        List<Artist> artists = dataSource.queryArtist(DataSource.ORDER_BY_ASC);
+        List<Artist> artists = dataSource.queryArtist(DataSource.ORDER_BY_DESC);
 
         if (artists == null){
-            System.out.println("Empty");
+            System.out.println("No Artists!");
             return;
         }
 
