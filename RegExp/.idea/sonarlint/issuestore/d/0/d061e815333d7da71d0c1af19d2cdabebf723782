@@ -1,0 +1,61 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(›áÎ“ûÿÿÿÿ8±—ë‘Š/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(…ÂÁŒ8†©÷‘Š/
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(µÚ§ó8 °ª’Š/
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(È­Åşÿÿÿÿ8çÒ“–Š/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‘à‡8±—ë‘Š/
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(ƒ±Õúøÿÿÿÿ8‡Á¨’Š/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(Ü©ß«8Ğ´¢’Š/
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(ıÜ°‰ÿÿÿÿÿ8üŒ–Š/
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(¿Ğ‘é8é…„˜Š/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(«Ìêúÿÿÿÿ8±—ë‘Š/
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(¨ŒÕ8åó ’Š/
+v
+java:S1192†"XDefine a constant instead of duplicating this literal "^4[0-9]{12}([0-9]{3})?$" 4 times.(¹×ÖÎ8¯½œ˜Š/
+T	java:S106E"9Replace this use of System.out or System.err by a logger.(ÿÏÈP8‚÷Ê–Š/
+]	java:S1253"<This block of commented-out lines of code should be removed.(¶Èıÿÿÿÿÿ8ˆ§–Š/
+V	java:S106†"9Replace this use of System.out or System.err by a logger.(¹×ÖÎ8˜ú™˜Š/
+U	java:S106o"9Replace this use of System.out or System.err by a logger.(—§‘ü8İĞ—Š/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(–¬ìÎ8±—ë‘Š/
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(ÎÃÇÂ8¢ÔÜ–Š/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ìï‡…8±—ë‘Š/
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(¥ûë¦8ñôÁ’Š/
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(Ìç×óúÿÿÿÿ8Çˆ°’Š/
+T	java:S106R"9Replace this use of System.out or System.err by a logger.(øÕ8“Ñı–Š/
+t
+java:S1192"XDefine a constant instead of duplicating this literal "abcDeeeF12Ghhiiiijkl99z" 4 times.(Úµ8¢İş‘Š/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­À£œûÿÿÿÿ8±—ë‘Š/
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(²æ«Øøÿÿÿÿ8ÂÙ –Š/
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(ŸöÏª8ü¤”’Š/
+U	java:S106z"9Replace this use of System.out or System.err by a logger.(‹»İ”8é…„˜Š/
+U	java:S106c"9Replace this use of System.out or System.err by a logger.(õÑ…8ğ©À—Š/
+e
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(€Ô¦ş8±—ë‘Š/
+W	java:S125g"<This block of commented-out lines of code should be removed.(©ù8‘˜Û—Š/
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(ÂÆíëøÿÿÿÿ8§¨©–Š/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(ØÔÒÿ8¹¶ÿ‘Š/
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(©¾’¤úÿÿÿÿ8¬ì’Š/
+U	java:S106|"9Replace this use of System.out or System.err by a logger.(œ“ÂÓ8é…„˜Š/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.( ù¤Ğ8¦…™’Š/
+U	java:S106
+"9Replace this use of System.out or System.err by a logger.(±¤ª¹8±—ë‘Š/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ê°İ°ùÿÿÿÿ8±—ë‘Š/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(¥æÆ‰8–‹‘’Š/
+W	java:S125"<This block of commented-out lines of code should be removed.(¸‰¬s8±—ë‘Š/
+[	java:S106‰"9Replace this use of System.out or System.err by a logger.(²…Ë²úÿÿÿÿ8¯½œ˜Š/
+—
+java:S1192y"{Define a constant instead of duplicating this literal "^([\\(]{1}[0-9]{3}[\\)]{1}[ ]{1}[0-9]{3}[\\-]{1}[0-9]{4})$" 4 times.(ï£J8™ü‰˜Š/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”¤ç†8±—ë‘Š/
+T	java:S106y"9Replace this use of System.out or System.err by a logger.(ï£J8¢’˜Š/
+U	java:S106b"9Replace this use of System.out or System.err by a logger.(ë·ê¹8™—»—Š/
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(ø²ôİ8æ¸¬–Š/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(­‡ëà8±—ë‘Š/
+[	java:S106‡"9Replace this use of System.out or System.err by a logger.(ì›õöıÿÿÿÿ8¯½œ˜Š/
+V	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ÚìÏÌ8¯½œ˜Š/
+j
+java:S5361-"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Õš­åşÿÿÿÿ8¡€®’Š/
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(¦ÔÙø8 •ÿ–Š/
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(Ë›ÿüÿÿÿÿ8·•«—Š/
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(×ê«‚ıÿÿÿÿ8ÕØ¸’Š/
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(Õš­åşÿÿÿÿ8‹”­’Š/
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(™ü ”üÿÿÿÿ8‹¯µ’Š/

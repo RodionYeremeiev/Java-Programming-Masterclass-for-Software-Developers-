@@ -8,7 +8,6 @@ public class Challenge_4 {
          * for the following string.
          * Print out the resulting string.
          */
-
         System.out.println("=====Challenge_#4=======================================");
 
         String challenge4 = "Replace all blanks with underscores.";
