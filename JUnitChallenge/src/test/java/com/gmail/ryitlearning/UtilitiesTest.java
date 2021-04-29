@@ -30,9 +30,10 @@ public class UtilitiesTest {
     }
 
 
-    @org.junit.jupiter.api.Test
+    @org.junit.jupiter.api.Test()
     public void converter() {
         assertEquals(300, utilities.converter(10, 5));
+        assertThrows(ArithmeticException.class, () -> utilities.converter(10, 0));
     }
 
     @org.junit.jupiter.api.Test
