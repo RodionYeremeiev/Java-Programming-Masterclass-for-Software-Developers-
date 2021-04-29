@@ -23,7 +23,7 @@ public class Utilities {
 
     /**
      * Removes pairs of the same characters that are next to each other,
-     * by removing on e occurrence of the character.
+     * by removing one occurrence of the character.
      * "ABBCDEEF" -> "ABCDEF"
      * "ABCBDEEF" -> "ABCBDEF" (the two 'B' aren't next to each other,
      * so they aren't removed.
@@ -32,10 +32,7 @@ public class Utilities {
      * @return
      */
     public String removePairs(String source) {
-        if (source.length() == 0) {
-            throw new IllegalArgumentException();
-        }
-        if (source.length() < 2) {
+        if (source == null || source.length() < 2) {
             return source;
         }
 

@@ -6,5 +6,9 @@ public class Main {
 
         System.out.println(utilities.removePairs("AABCDDEFF"));
         System.out.println(utilities.removePairs("A"));
+        System.out.println(utilities.removePairs("AAAAAAAAAAA"));
+        System.out.println("---------------------------------------------");
+        String charArray = "hello";
+        System.out.println(utilities.everyNthChar(charArray.toCharArray(), 2));
     }
 }
