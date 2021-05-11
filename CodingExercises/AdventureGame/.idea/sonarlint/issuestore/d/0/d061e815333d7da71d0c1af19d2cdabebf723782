@@ -1,9 +1,9 @@
 
-Z	java:S106C"9Replace this use of System.out or System.err by a logger.(¦Å£Øüÿÿÿÿ8¯ÇúÛ•/
-U	java:S106U"9Replace this use of System.out or System.err by a logger.(åëú8¯ÇúÛ•/
-Z	java:S106;"9Replace this use of System.out or System.err by a logger.(ßáì‚üÿÿÿÿ8¯ÇúÛ•/
-Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¯ÇúÛ•/
 o
 java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(öäÉõ8¯ÇúÛ•/
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(åëú8ù½â•/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(¦Å£Øüÿÿÿÿ8ù½â•/
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ù½â•/
 ]	java:S125"<This block of commented-out lines of code should be removed.(Ù­íœüÿÿÿÿ8êÉõÛ•/
-U	java:S106A"9Replace this use of System.out or System.err by a logger.(™Äı»8¯ÇúÛ•/
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(ßáì‚üÿÿÿÿ8ù½â•/
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(™Äı»8ù½â•/
